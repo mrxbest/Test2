@@ -1,47 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>❤️</title>
+  <title>Batyr Joporow</title>
   <style>
     body {
-      background-color: #000;
       margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
       height: 100vh;
       display: flex;
-      align-items: center;
       justify-content: center;
-      cursor: pointer;
-      overflow: hidden;
+      align-items: center;
+      font-size: 3em;
+      animation: fadeIn 2s ease-in;
     }
-    #heart {
-      font-size: 120px;
-      color: red;
-      transition: transform 0.2s ease;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-    }
-    .clicked {
-      animation: none;
-      transform: scale(1.5);
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
-<body onclick="heartClick()">
-  <div id="heart">❤️</div>
-  <script>
-    function heartClick() {
-      const heart = document.getElementById("heart");
-      heart.classList.add("clicked");
-      setTimeout(() => {
-        heart.classList.remove("clicked");
-      }, 200);
-    }
-  </script>
+<body>
+  Batyr Joporow
 </body>
 </html>
